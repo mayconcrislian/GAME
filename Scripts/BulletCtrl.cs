@@ -33,19 +33,19 @@ public class BulletCtrl : MonoBehaviour
     }
     
 
-   // private void OnTriggerEnter2D(Collider2D collision)
-  //  {
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
 
-       // if (collision.gameObject.GetComponent<Rigidbody2D>())
-         //   {
-          //      Destroy(gameObject);
-        //    }
+        if (collision.gameObject.GetComponent<Rigidbody2D>())
+            {
+                Destroy(gameObject);
+            }
         
-   // }
-   // void DestroyBulletCtrl()
-   // {
-      //  Destroy(gameObject);
-  //  }
+    }
+    void DestroyBulletCtrl()
+    {
+        Destroy(gameObject);
+    }
 
     //VINI È GAY
 }
